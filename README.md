@@ -24,18 +24,24 @@ GWAS metadata (“All associations v1.0.2” and “All studies v1.0.3.1”) was
 ## Results 
 
 The NHGRI grants awarded to the Center for Mendelian Genomics (CMG) and the Center for Common Disease Genomics (CCDG) provide a method of identifying publications with their respective ideological camp. We obtained a list of publications associated with the grant numbers for either camp using PubMed’s advanced search tool. Gene names listed in either the title or abstract of studies on PubMed were pulled from the AI tool Pubtator3 and cross-referenced with PubMed IDs associated with either camp. Of the 496 genes pulled from titles and abstracts in publications attributed to either camp, 4 appeared in joint collaboration studies, and 3 overlapped in independent studies from the CMG and CCDG. 
-![image](./Figures/title_abstract_gene_mentions_by_CMG_CCDG.png)
+
+![Fig1](./figures/title_abstract_gene_mentions_by_CMG_CCDG.png)
+
 This overlap was statistically significant if joint collaboration studies were counted as an overlap to increase the independence assumption of the Fisher’s exact test (p = 9.45e-05), and approached but was not statistically significant if joint collaboration studies were excluded as confounders (p = 0.07).  
 
 We next turned to curated GWAS metadata from NHGRI-EBI, which would provide information on a larger amount of GWAS publications as well as their cohort size and risk allele frequencies. Since <10 studies total in this database overlapped with the NHGRI grant numbers for CMG or CCDG, we used cohort size as a proxy measure given that the Common Disease camp references large cohort sizes in its own mission statement. As opposed to an expected bimodal distribution of cohort sizes from either Mendelian or Common Disease studies, we observed a trend towards a central cohort size in the 1000-10000 range, indicating an “ideal” cohort size for GWA studies regardless of ideological motivation. 
-![image](./Figures/cohort_size_dist.png)
+
+![Fig2](./figures/cohort_size_dist.png)
+
 We also observed more unimodal distributions of median and minimum risk allele frequencies identified in studies.  
-![image](./Figures/median_risk_allele_frequency_dist.png)
-![image](./Figures/min_risk_allele_frequency_dist.png)
+
+![Fig3A](./figures/median_risk_allele_frequency_dist.png)
+![Fig3B](./figures/min_risk_allele_frequency_dist.png)
 Finally, we found that there was no statistically significant correlation between total cohort size and the median risk allele frequency identified in a study (coefficient = -0.02, p = 0.20). 
-![image](./Figures/median_risk_allele_frequency_cohort_size_correlation.png)
+
+![Fig4A](./figures/median_risk_allele_frequency_cohort_size_correlation.png)
 There was a weak, albeit statistically significant correlation between total cohort size and minimum risk allele frequency (coefficient = -0.03, p = 0.04).  
-![image](./Figures/min_risk_allele_frequency_cohort_size_correlation.png)
+![Fig4B](./figures/min_risk_allele_frequency_cohort_size_correlation.png)
 
 ## Conclusion 
 
