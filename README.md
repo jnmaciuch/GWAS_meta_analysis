@@ -71,4 +71,6 @@ Future studies may be able to leverage as-yet-unpublished GWAS metadata database
 
 ## Setup
 
-Change name of desired home folder in modify_home_folder.py.
+Change name of desired home folder in modify_home_folder.py to specify repository location.
+
+EBI datasets are not included due to file size. Most recent "associations" and "studies" files can be downloaded from ![here](https://www.ebi.ac.uk/gwas/docs/file-downloads). File names will need to be modified where indicated in src/manuscript/datasets.py
